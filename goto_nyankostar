@@ -1,0 +1,58 @@
+#include "Keyboard.h"
+
+void setup() {
+  int wait=1000;
+  // initailze control over the keyboard:
+  Keyboard.begin();
+  delay(wait);
+
+  spotlight();
+
+  // terminal
+  Keyboard.print("terminal.app");
+  delay(wait*3);
+  Keyboard.print("\n");
+  Keyboard.releaseAll();
+  delay(wait*3);
+
+  // set sound volume max
+  Keyboard.print("osascript -e 'set Volume 10'");
+  delay(wait*3);
+  Keyboard.print("\n");
+  Keyboard.releaseAll();
+  delay(wait*3);
+
+  spotlight();
+  
+  // safari
+  Keyboard.print("safari");
+  delay(wait*3);
+  Keyboard.print("\n");
+  Keyboard.releaseAll();
+  delay(wait*5);
+
+  // type youtube url
+  Keyboard.print("https://www.youtube.com/watch?v=dfvnwx5qQRs");
+  delay(wait*3);
+  Keyboard.print("\n");
+  Keyboard.releaseAll();
+  
+  Keyboard.end();
+  
+}
+
+void spotlight(){
+  // try ctrl + space
+  //Keyboard.press(KEY_LEFT_CTRL);
+  //Keyboard.print(" ");
+  // try command + space
+  Keyboard.press(KEY_LEFT_GUI);
+  Keyboard.print(" ");
+  delay(1000*3);
+  Keyboard.releaseAll();
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
