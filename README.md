@@ -1,5 +1,5 @@
 # badusb
-*あああ*  
+*周囲に人がいると恥ずかしいことになりますのでご注意ください。*  
 macOS Sierraで確認しました。  
 - spotlightからterminalを立ち上げます。
 - 音量をmaxにします。
