@@ -32,7 +32,7 @@ void setup() {
   delay(wait*5);
 
   // type youtube url
-  Keyboard.print("https://www.youtube.com/watch?v=dfvnwx5qQRs");
+  Keyboard.print("https://youtu.be/dfvnwx5qQRs?t=56");
   delay(wait*3);
   Keyboard.print("\n");
   Keyboard.releaseAll();
